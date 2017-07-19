@@ -8,7 +8,18 @@ Your have to write PasteBin application.
  
  **You are allowed to modify only files in src/main directory**
 
-Write two Servlet. First 'SimpleServlet' in doGet() method should print 'form' named <form> with asked elements:
+Write two Servlets and Filter. 
+
+'AuthFilter' should:
+* if cookie exists:
+    * if name and value is valid - accept
+    * else - nothing
+* else:
+    * if parameter `pw` don't exist - print `Missing password`
+    * if parameter value not equal to `passwd` - print `Wrong password`
+    * else - create valid Cookie and accept
+
+First 'SimpleServlet' in doGet() method should print 'form' named <form> with asked elements:
 * 'title' named, 'text' type `input`
 * 'content' named `textarea`
 * 'submit' named, 'submit' type `input`,
