@@ -6,6 +6,7 @@ import com.gargoylesoftware.htmlunit.WebRequest;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.util.NameValuePair;
 import org.javaee7.servlet.simple.AuthFilter;
+import org.javaee7.servlet.simple.Paste;
 import org.javaee7.servlet.simple.PasteServlet;
 import org.javaee7.servlet.simple.SimpleServlet;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -46,7 +47,7 @@ public class ServletTest {
     @Deployment(testable = false)
     public static WebArchive createDeployment() {
         WebArchive war = ShrinkWrap.create(WebArchive.class)
-                .addClass(PasteServlet.class).addClass(SimpleServlet.class).addClass(AuthFilter.class);
+                .addClass(PasteServlet.class).addClass(SimpleServlet.class).addClass(AuthFilter.class).addClass(Paste.class);
         return war;
     }
 
