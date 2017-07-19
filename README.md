@@ -1,0 +1,44 @@
+# PasteBin
+
+Simple web application which let you share data.
+
+## Goal
+
+Your have to write PasteBin application.
+ 
+ **You are allowed to modify only files in src/main directory**
+
+Write two Servlet. First 'SimpleServlet' in doGet() method should print 'form' named <form> with asked elements:
+* 'title' named, 'text' type `input`
+* 'content' named `textarea`
+* 'submit' named, 'submit' type `input`,
+
+on doPost() should resend request to doPost() in 'PasteServlet'.
+
+'PasteServlet' doPost() should : 
+- generate key for identify 'paste'
+- take parameters and put them to `Map<>` with generate KEY (you are allowed to use Paste class)
+- put Map to application context
+- print `<a>` to a 'paste' which contain pair 'attrName = KEY'
+
+'PasteServlet' doGet() should:
+- take Map from application context
+- take parameter 'attrName'
+- print concatenate 'title' and 'content' values
+
+
+## To verify your solution
+
+    mvn test
+    
+or 
+
+    mvn clean test
+
+## To deploy application
+
+    mvn clean install
+    
+or
+
+    mvn clean install -D skipTests
