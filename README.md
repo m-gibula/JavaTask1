@@ -40,7 +40,6 @@ on doPost() should resend request to doPost() in 'PasteServlet'.
 - print concatenate 'title' and 'content' values
 
 
-<font color="green"> Some green text </font>
 
 ## To verify your solution
 
