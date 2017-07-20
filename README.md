@@ -6,7 +6,7 @@ Simple web application which let you share data.
 
 Your have to write PasteBin application.
  
- **You are allowed to modify only files in src/main directory**
+ **You are allowed to modify only files in `src/main` directory**
 
 Write two Servlets and Filter. 
 
@@ -39,6 +39,8 @@ on doPost() should resend request to doPost() in 'PasteServlet'.
 - take parameter 'attrName'
 - print concatenate 'title' and 'content' values
 
+
+<font color="green"> Some green text </font>
 
 ## To verify your solution
 
