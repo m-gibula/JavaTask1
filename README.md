@@ -26,11 +26,13 @@ First 'SimpleServlet' in doGet() method should print 'form' named <form> with as
 
 on doPost() should resend request to doPost() in 'PasteServlet'.
 
+
 'PasteServlet' doPost() should : 
 - generate key for identify 'paste'
 - take parameters and put them to `Map<>` with generate KEY (you are allowed to use Paste class)
 - put Map to application context
 - print `<a>` to a 'paste' which contain pair 'attrName = KEY'
+
 
 'PasteServlet' doGet() should:
 - take Map from application context

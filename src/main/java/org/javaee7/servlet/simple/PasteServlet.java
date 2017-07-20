@@ -24,10 +24,10 @@ public class PasteServlet extends HttpServlet {
         response.setContentType("text/html");
         //Put your answer here
 
-        PrintWriter out = response.getWriter();
-        Map<String, Paste> mape = (Map<String, Paste>) request.getServletContext().getAttribute("mapa");
-        Paste wklejka = mape.get(request.getParameter("id"));
-        out.print(wklejka.getTitle()+wklejka.getContent());
+//        PrintWriter out = response.getWriter();
+//        Map<String, Paste> mape = (Map<String, Paste>) request.getServletContext().getAttribute("mapa");
+//        Paste wklejka = mape.get(request.getParameter("id"));
+//        out.print(wklejka.getTitle()+wklejka.getContent());
 
 
         //End of answer
@@ -38,20 +38,20 @@ public class PasteServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
         //Put your answer her
-        Map<String, Paste> mapOfPaste = new HashMap<String, Paste>();
-        String key;
-
-        PrintWriter out = response.getWriter();
-        String title = request.getParameter("title");
-        String content = request.getParameter("content");
-
-        Paste tmp = new Paste(title,content);
-        Date data = new Date();
-        key = "paste-"+data.getTime();
-
-        mapOfPaste.put(key,tmp);
-        request.getServletContext().setAttribute("mapa",mapOfPaste);
-        out.println("<a href=\"paste?id="+key+"\">"+key+"</a>");
+//        Map<String, Paste> mapOfPaste = new HashMap<String, Paste>();
+//        String key;
+//
+//        PrintWriter out = response.getWriter();
+//        String title = request.getParameter("title");
+//        String content = request.getParameter("content");
+//
+//        Paste tmp = new Paste(title,content);
+//        Date data = new Date();
+//        key = "paste-"+data.getTime();
+//
+//        mapOfPaste.put(key,tmp);
+//        request.getServletContext().setAttribute("mapa",mapOfPaste);
+//        out.println("<a href=\"paste?id="+key+"\">"+key+"</a>");
 
         //End of answer
     }

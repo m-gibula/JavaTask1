@@ -20,20 +20,19 @@ public class SimpleServlet extends HttpServlet {
         response.setContentType("text/html");
         //Put your answer here
 
-        PrintWriter out = response.getWriter();
-        out.println("<html>");
-        out.println("   <head>");
-        out.println("       <title></title>");
-        out.println("   </head>");
-        out.println("   <body>" +
-                "");
-        out.println("       <form name = \"form\" action = \"add\" method = \"POST\">");
-        out.println("           <input name = \"title\" type = \"text\"/>");
-        out.println("           <textarea name = \"content\"></textarea>");
-        out.println("           <input name = \"submit\" type = \"submit\"/>");
-        out.println("       </form>");
-        out.println("   </body>");
-        out.println("</html>");
+//        PrintWriter out = response.getWriter();
+//        out.println("<html>");
+//        out.println("   <head>");
+//        out.println("       <title></title>");
+//        out.println("   </head>");
+//        out.println("   <body>");
+//        out.println("       <form name = \"form\" action = \"add\" method = \"POST\">");
+//        out.println("           <input name = \"title\" type = \"text\"/>");
+//        out.println("           <textarea name = \"content\"></textarea>");
+//        out.println("           <input name = \"submit\" type = \"submit\"/>");
+//        out.println("       </form>");
+//        out.println("   </body>");
+//        out.println("</html>");
 
 
         //End of answer
@@ -45,8 +44,8 @@ public class SimpleServlet extends HttpServlet {
         response.setContentType("text/html");
         //Put your answer here
 
-        RequestDispatcher rd = request.getRequestDispatcher("/paste");
-        rd.forward(request,response);
+//        RequestDispatcher rd = request.getRequestDispatcher("/paste");
+//        rd.forward(request,response);
 
 
         //End of answer
